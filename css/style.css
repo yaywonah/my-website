@@ -84,70 +84,107 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   * {
-    color: #152A3E;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-   }
 
-   body {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-   }
-
-   header {
-    background-color: #EEEFDA;
-    justify-content: center;
-    align-items: center;
-   }
-
-   header nav {
-    padding: 30px 0px;
-   }
-
-   header nav ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-   }
-
-   nav a {
-    font-size: 2rem;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
+* {
+  color: #152A3E;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
-   h1 {
-    font-family: "Lexend Tera", sans-serif;
-    padding: 30px 0;
-   }
-
-   h2, h3, p {
-    font-family: "Lekton", monospace;
-   }
-
-   #about {
-    background-color: #EEEFDA;
-   }
-
-   .btn {
-    cursor: pointer;
-   }
-
-   .btn:hover {
-    transform: scale3d(1.03);
-    background-color: brown;
-    color: beige;
-    box-shadow: 0 0 25px brown;
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-family: "Lekton", monospace;
 }
 
-  
+header {
+  background-color: #F7E8E8;
+}
+
+nav {
+  padding: 30px 0px;
+  font-family: "Lekton", monospace;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav a {
+  font-size: 1rem;
+  margin-left: 3rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+h1 {
+  font-family: "Lexend Tera", sans-serif;
+  padding: 30px 0;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+h3 {
+  padding: 20px 0;
+}
+
+#projects {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  margin: 0 5px;
+}
+
+.live {
+  padding-top: 20px;
+}
+
+.project-singular p {
+  padding: 20px 0;
+}
+
+.skills-tools {
+  margin: 10px 0;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #F7E8E8;
+  padding: 1rem 2.8rem;
+  border-radius: 4rem;
+}
+
+#skills {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+#about {
+  background-color: #F7E8E8;
+}
+
+.about-text {
+  margin: 0px 10px;
+}
+
+img {
+  width: 300px;
+  padding: 15px;
+  margin-top: 80px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -236,9 +273,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -249,6 +286,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -308,4 +346,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
