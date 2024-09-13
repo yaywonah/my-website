@@ -102,11 +102,12 @@ body {
 
 header {
   background-color: #F7E8E8;
+  padding: 1.875rem 0;
 }
 
 nav {
-  padding: 30px 0px;
   font-family: "Lekton", monospace;
+  margin-bottom: 1.25rem;
 }
 
 nav ul {
@@ -121,7 +122,7 @@ nav ul li {
 
 nav a {
   font-size: 1rem;
-  margin-left: 3rem;
+  margin: 1rem;
   font-weight: 500;
   transition: 0.3s ease;
   border-bottom: 3px solid transparent;
@@ -129,60 +130,93 @@ nav a {
 
 h1 {
   font-family: "Lexend Tera", sans-serif;
-  padding: 30px 0;
-}
-
-h2 {
-  padding-bottom: 30px;
+  margin: 2.5rem 0 1.875rem 0;
 }
 
 h3 {
-  padding: 20px 0;
+  padding: 1.25rem 0;
 }
 
 #projects {
-  padding-top: 80px;
-  padding-bottom: 20px;
+  padding-top: 5rem;
   margin: 0 5px;
 }
 
+.project-singular {
+  margin: 0 20px 20px 20px;
+  padding: 0 5px;
+}
+
 .live {
-  padding-top: 20px;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.project-singular h2 {
+  padding-bottom: 1.25rem;
 }
 
 .project-singular p {
-  padding: 20px 0;
+  padding: 1.25rem 0;
+  text-align: left;
 }
 
 .skills-tools {
-  margin: 10px 0;
+  text-align: left;
+  margin: 0.1875rem 0 2.5rem 0;
 }
 
 .btn {
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   background-color: #F7E8E8;
   padding: 1rem 2.8rem;
   border-radius: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 #skills {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding: 3.75rem 0 5rem 0;
+}
+
+#skills h2 {
+  padding-bottom: 1.25rem;
+}
+
+#skills ul li {
+  margin-bottom: 1.25rem;
 }
 
 #about {
   background-color: #F7E8E8;
+  padding-bottom: 5rem;
+}
+
+#about img {
+  padding: 15px;
+  margin-top: 80px;
+  width: 80%;
 }
 
 .about-text {
   margin: 0px 10px;
 }
 
-img {
-  width: 300px;
-  padding: 15px;
-  margin-top: 80px;
+footer {
+margin: 5rem 0 3.75rem 0;
+}
+
+footer h2 {
+  padding: 1.875rem 0 1.875rem 0;
+}
+
+.social-icons {
+  padding-bottom: 1.875rem;
+}
+
+.copyright {
+  padding: 3.75rem 0 3.75rem;
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
