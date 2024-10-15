@@ -171,7 +171,7 @@ span {
 }
 
 img {
-  width: 100%;
+  width: 90%;
 }
 
 figure {
@@ -241,6 +241,13 @@ nav #contact-link {
 nav ul {
   display: flex;
   justify-content: space-between;
+}
+
+nav ul li a:hover, nav #contact-link:hover {
+  background-color: #F8D697;
+  color: #000000;
+  padding: 10px 10px;
+  border-radius: 30px;
 }
 
 header h1 {
