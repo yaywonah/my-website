@@ -222,28 +222,28 @@ header {
   padding-bottom: 3.75rem;
 }
 
-nav {
+#primary-nav {
   margin-bottom: 1.25rem;
 }
 
-header nav ul li {
+#primary-nav ul li {
   margin-bottom: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-nav #contact-link {
+#contact-link {
   background-color: #E9B14C;
   padding: 10px 10px;
   border-radius: 30px;
 }
 
-nav ul {
+#primary-nav ul {
   display: flex;
   justify-content: space-between;
 }
 
-nav ul li a:hover, nav #contact-link:hover {
+#primary-nav ul li a:hover, nav #contact-link:hover {
   background-color: #F8D697;
   color: #000000;
   padding: 10px 10px;
@@ -538,7 +538,7 @@ h5 {
   font-size: 1.5rem;
 }
 
-header nav ul li {
+#primary-nav ul li {
   font-size: 1rem;
 }
 
@@ -560,11 +560,11 @@ header nav {
   text-transform: uppercase;
 }
 
-nav {
+#primary-nav {
   margin: 0 0 5rem 0;
 }
 
-header nav ul {
+#primary-nav ul {
   display: flex;
   justify-content: space-between;
   width: 80%;
@@ -781,20 +781,20 @@ footer .copyright {
     justify-content: flex-end;
   }
 
-  nav {
+  #primary-nav {
     margin-bottom: 5rem;
   }
 
-  header nav {
+  header #primary-nav {
     justify-content: flex-end;
     width: 45%;
   }
 
-  nav ul li a {
+  #primary-nav ul li a {
     padding: 0.625rem 0.625rem;
   }
 
-  nav ul li a:hover, nav #contact-link:hover {
+  #primary-nav ul li a:hover, nav #contact-link:hover {
     background-color: #F8D697;
     color: #000000;
     padding: 10px 10px;
