@@ -17,12 +17,6 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Customize the background color to match your design.
- */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -34,9 +28,6 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
 
 hr {
   display: block;
@@ -47,12 +38,6 @@ hr {
   padding: 0;
 }
 
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
 audio,
 canvas,
 iframe,
@@ -62,9 +47,6 @@ video {
   vertical-align: middle;
 }
 
-/*
- * Remove default fieldset styles.
- */
 
 fieldset {
   border: 0;
@@ -72,9 +54,6 @@ fieldset {
   padding: 0;
 }
 
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
   resize: vertical;
@@ -110,8 +89,6 @@ h1 {
   font-size: 1.75rem;
   line-height: 1.5;
   width: 100%;
-
-  /* margin: 2.5rem 0 1.875rem 0; */
 }
 
 h2 {
@@ -125,9 +102,6 @@ h2 {
 
 h3 {
   font-size: 1.75rem;
-
-  /* padding: 1.25rem 0;
-  margin: 0; */
 }
 
 h4 {
@@ -441,15 +415,6 @@ footer .social-icons li i {
   display: none !important;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
 .visually-hidden {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -460,14 +425,7 @@ footer .social-icons li i {
   position: absolute;
   white-space: nowrap;
   width: 1px;
-  /* 1 */
 }
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
 
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
@@ -480,20 +438,9 @@ footer .social-icons li i {
   width: auto;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
   visibility: hidden;
 }
-
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
 
 .clearfix::before,
 .clearfix::after {
@@ -505,15 +452,14 @@ footer .social-icons li i {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;  
+    }
+}
 
 @media only screen and (min-width: 768px) {
 
-  /* Style adjustments for viewports that meet the condition */
 .content-wrapper {
   max-width: 640px;
 }
@@ -907,7 +853,6 @@ footer .copyright {
 (-webkit-min-device-pixel-ratio: 1.25),
 (min-resolution: 1.25dppx),
 (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
@@ -941,10 +886,6 @@ footer .copyright {
     content: " (" attr(title) ")";
   }
 
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
