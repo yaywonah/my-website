@@ -410,6 +410,10 @@ footer .social-icons li i {
   font-size: 1.875rem;
 }
 
+footer .social-icons .sr-only {
+  
+}
+
 .hidden,
 [hidden] {
   display: none !important;
